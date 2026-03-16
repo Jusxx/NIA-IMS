@@ -10,6 +10,8 @@ $db   = "nia_irrigation";
 $conn = new mysqli($host, $user, $pass, $db);
 $conn->set_charset("utf8mb4");
 
-// PhilSMS v3 config
-$philsms_api_token = "848|igzCQi9nD9BABZQCpznBr9wxbPI4cl8ZMdpiaXpi0c8d4cc1";
-$philsms_sender_id = "PhilSMS"; 
+
+$env = parse_ini_file(__DIR__ . '/.env');
+
+$philsms_api_token = $env['SMS_API_TOKEN'];
+$philsms_sender_id = $env['SMS_SENDER'];
