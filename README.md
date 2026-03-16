@@ -53,4 +53,4 @@ SMS_SENDER=IrrigationSystem
 DB_HOST=localhost
 DB_NAME=nia_irrigation
 DB_USER=root
-DB_PASS=
+DB_PASS="# NIA-IMS" 
